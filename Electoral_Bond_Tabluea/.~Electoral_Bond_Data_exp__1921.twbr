@@ -1,0 +1,2408 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook locale='en_IN' original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Electoral_Bond_Data_exp' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (merged_buyer_and_user)' inline='true' name='federated.09v3dpr0fqpqwo10xao3e0526kon' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='merged_buyer_and_user_names' name='excel-direct.1r33odu1ognkqs1ev954h1mv221a'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='/var/folders/w0/tsn3lfsx0pl51lqfy4jlgjx40000gn/T/tableau-temp/3817313386/Data/xlsx/merged_buyer_and_user_names.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Branch_code_zip' name='excel-direct.1qmj4yq0gev9f212lsaz41e52ztl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/var/folders/w0/tsn3lfsx0pl51lqfy4jlgjx40000gn/T/tableau-temp/3817313386/Data/xlsx/Branch_code_zip.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1qmj4yq0gev9f212lsaz41e52ztl' name='Sheet11' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:E30:no:A1:E30:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Sl.No.' ordinal='0' />
+            <column datatype='string' name='State/UT' ordinal='1' />
+            <column datatype='string' name='Name of the Branch &amp; Address' ordinal='2' />
+            <column datatype='integer' name='Branch Code No.' ordinal='3' />
+            <column datatype='spatial' name='Pincode' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1r33odu1ognkqs1ev954h1mv221a' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:S10001:no:A1:S10001:1' header='yes' lost='0' outcome='1' processed='99990'>
+              <column datatype='integer' name='Sr No._x' ordinal='0' />
+              <column datatype='real' name='Reference No  (URN)' ordinal='1' />
+              <column datatype='string' name='Journal Date' ordinal='2' />
+              <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date of Purchase' ordinal='3' />
+              <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date of Expiry' ordinal='4' />
+              <column datatype='string' name='Name of the Purchaser' ordinal='5' />
+              <column datatype='string' name='Prefix' ordinal='6' />
+              <column datatype='integer' name='Bond Number' ordinal='7' />
+              <column datatype='integer' name='Denominations_x' ordinal='8' />
+              <column datatype='integer' name='Issue Branch Code' ordinal='9' />
+              <column datatype='integer' name='Issue Teller' ordinal='10' />
+              <column datatype='string' name='Status' ordinal='11' />
+              <column datatype='integer' name='Sr No._y' ordinal='12' />
+              <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date Of Encashment' ordinal='13' />
+              <column datatype='string' name='Name of Political party' ordinal='14' />
+              <column datatype='string' name='Account Number' ordinal='15' />
+              <column datatype='integer' name='Denominations_y' ordinal='16' />
+              <column datatype='integer' name='Pay Branch Code' ordinal='17' />
+              <column datatype='integer' name='Pay Teller' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1qmj4yq0gev9f212lsaz41e52ztl' name='Sheet11' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:E30:no:A1:E30:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Sl.No.' ordinal='0' />
+              <column datatype='string' name='State/UT' ordinal='1' />
+              <column datatype='string' name='Name of the Branch &amp; Address' ordinal='2' />
+              <column datatype='integer' name='Branch Code No.' ordinal='3' />
+              <column datatype='spatial' name='Pincode' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S10001:no:A1:S10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>99990</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sr No._x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sr No._x]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sr No._x</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reference No  (URN)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Reference No  (URN)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Reference No  (URN)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Journal Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Journal Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Journal Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Purchase</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date of Purchase]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date of Purchase</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Expiry</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date of Expiry]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date of Expiry</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of the Purchaser</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name of the Purchaser]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name of the Purchaser</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prefix</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Prefix]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Prefix</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bond Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bond Number]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Bond Number</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Denominations_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Denominations_x]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Denominations_x</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issue Branch Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Issue Branch Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Issue Branch Code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issue Teller</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Issue Teller]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Issue Teller</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sr No._y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sr No._y]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sr No._y</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Of Encashment</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Of Encashment]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date Of Encashment</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of Political party</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name of Political party]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name of Political party</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Account Number]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Account Number</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Denominations_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Denominations_y]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Denominations_y</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pay Branch Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pay Branch Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pay Branch Code</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pay Teller</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pay Teller]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pay Teller</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sl.No.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sl.No.]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Sl.No.</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State/UT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State/UT]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>State/UT</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of the Branch &amp; Address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name of the Branch &amp; Address]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Name of the Branch &amp; Address</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Branch Code No.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Branch Code No.]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Branch Code No.</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pincode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pincode]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Pincode</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E30:no:A1:E30:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Account Number]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='integer' name='[Bond Number]' role='dimension' type='ordinal' />
+      <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Denominations_x]/10^7' />
+      </column>
+      <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+      <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+      <column caption='Denominations y' datatype='integer' name='[Denominations_y]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Issue Branch Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Pay Branch Code]' role='dimension' type='ordinal' />
+      <column caption='Sr No. x' datatype='integer' name='[Sr No._x]' role='measure' type='quantitative' />
+      <column caption='Sr No. y' datatype='integer' name='[Sr No._y]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <aliases>
+          <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+          <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+          <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+          <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+          <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+        </aliases>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+        </semantic-values>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet11' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_65078F675FDF47C2B4589B0876548CB2]' role='measure' type='quantitative' />
+      <column-instance column='[Denominations_y]' derivation='None' name='[none:Denominations_y:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Name of Political party]' derivation='None' name='[none:Name of Political party:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Name of Political party)' hidden='true' name='[Action (Name of Political party)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Name of Political party]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Name of Political party,State/UT)' hidden='true' name='[Action (Name of Political party,State/UT)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Name of Political party]' />
+          <groupfilter function='level-members' level='[State/UT]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Name of the Purchaser)' hidden='true' name='[Action (Name of the Purchaser)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Name of the Purchaser]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State/UT)' hidden='true' name='[Action (State/UT)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State/UT]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date of Purchase))' hidden='true' name='[Action (YEAR(Date of Purchase))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Date of Purchase:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_IN' class='hyper' dbname='Data/Electoral_Bond_Data_exp.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0' table='[Extract].[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Sheet1_65078F675FDF47C2B4589B0876548CB2' table='[Extract].[Sheet1_65078F675FDF47C2B4589B0876548CB2]' type='table' />
+            <relation name='Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0' table='[Extract].[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Sr No._x</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sr No._x]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Sr No._x</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18741</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reference No  (URN)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Reference No  (URN)]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Reference No  (URN)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>820</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Journal Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Journal Date]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Journal Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>198</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date of Purchase</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date of Purchase]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Date of Purchase</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>198</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date of Expiry</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date of Expiry]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Date of Expiry</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>198</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name of the Purchaser</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name of the Purchaser]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Name of the Purchaser</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1456</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prefix</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Prefix]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Prefix</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bond Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bond Number]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Bond Number</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9963</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Denominations_x</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Denominations_x]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Denominations_x</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Issue Branch Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Issue Branch Code]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Issue Branch Code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Issue Teller</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Issue Teller]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Issue Teller</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sr No._y</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sr No._y]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Sr No._y</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18741</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Of Encashment</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Of Encashment]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Date Of Encashment</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>275</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name of Political party</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name of Political party]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Name of Political party</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account Number]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Account Number</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Denominations_y</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Denominations_y]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Denominations_y</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pay Branch Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pay Branch Code]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Pay Branch Code</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pay Teller</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pay Teller]</local-name>
+              <parent-name>[Sheet1_65078F675FDF47C2B4589B0876548CB2]</parent-name>
+              <remote-alias>Pay Teller</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sl.No.</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sl.No.]</local-name>
+              <parent-name>[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]</parent-name>
+              <remote-alias>Sl.No.</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet11</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State/UT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State/UT]</local-name>
+              <parent-name>[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]</parent-name>
+              <remote-alias>State/UT</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet11</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name of the Branch &amp; Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name of the Branch &amp; Address]</local-name>
+              <parent-name>[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]</parent-name>
+              <remote-alias>Name of the Branch &amp; Address</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet11</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Branch Code No.</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Branch Code No.]</local-name>
+              <parent-name>[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]</parent-name>
+              <remote-alias>Branch Code No.</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet11</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pincode</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Pincode]</local-name>
+              <parent-name>[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]</parent-name>
+              <remote-alias>Pincode</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Sheet11</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Date of Purchase:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2020</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Name of Political party:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;GOA FORWARD PARTY&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;INC   ALL INDIA CONGRESS COMMITTEE&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AAM AADMI PARTY&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AAP  AAM AADMI PARTY&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SIKKIM KRANTIKARI MORCHA&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BHARATIYA JANATA PARTY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BJP BHARATIYA JANATA PARTY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JHARKHAND MUKTI MORCHA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;JAMMU AND KASHMIR NATIONAL CONFERENCE&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BIHAR PRADESH JANTA DAL(UNITED)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BRS  BHARAT RASHTRA SAMITHI&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SHIVSENA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ADYAKSHA SAMAJVADI PARTY&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TDP  TELUGU DESAM PARTY&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TELUGU DESAM PARTY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RASHTRIYA JANTA DAL&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BIJU JANATA DAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MAHARASHTRAWADI GOMNTAK PARTY&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;NATIONALIST CONGRESS PARTY MAHARASHTRA PRADESH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SHIROMANI AKALI DAL&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SIKKIM DEMOCRATIC FRONT&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SS  SHIVSENA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JANASENA PARTY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DRAVIDA MUNNETRA KAZHAGAM (DMK)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ALL INDIA TRINAMOOL CONGRESS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TMC  ALL INDIA TRINAMOOL CONGRESS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;YSR  CONGRESS PARTY  (YUVAJANA SRAMIKA RYTHU CONGRESS PARTY)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PRESIDENT, ALL INDIA CONGRESS COMMITTEE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RJD  RASHTRIYA JANTA DAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JANATA DAL ( SECULAR )&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JDS  JANATA DAL ( SECULAR )&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BHARAT RASHTRA SAMITHI&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BJD  BIJU JANATA DAL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Denominations_y:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>10000000</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>1000000</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>100000</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>10000</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>1000</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet11' id='Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0'>
+            <properties context=''>
+              <relation connection='excel-direct.1qmj4yq0gev9f212lsaz41e52ztl' name='Sheet11' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:E30:no:A1:E30:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Sl.No.' ordinal='0' />
+                  <column datatype='string' name='State/UT' ordinal='1' />
+                  <column datatype='string' name='Name of the Branch &amp; Address' ordinal='2' />
+                  <column datatype='integer' name='Branch Code No.' ordinal='3' />
+                  <column datatype='spatial' name='Pincode' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0' table='[Extract].[Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0]' type='table' />
+            </properties>
+          </object>
+          <object caption='Sheet1' id='Sheet1_65078F675FDF47C2B4589B0876548CB2'>
+            <properties context=''>
+              <relation connection='excel-direct.1r33odu1ognkqs1ev954h1mv221a' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:S10001:no:A1:S10001:1' header='yes' lost='0' outcome='1' processed='99990'>
+                  <column datatype='integer' name='Sr No._x' ordinal='0' />
+                  <column datatype='real' name='Reference No  (URN)' ordinal='1' />
+                  <column datatype='string' name='Journal Date' ordinal='2' />
+                  <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date of Purchase' ordinal='3' />
+                  <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date of Expiry' ordinal='4' />
+                  <column datatype='string' name='Name of the Purchaser' ordinal='5' />
+                  <column datatype='string' name='Prefix' ordinal='6' />
+                  <column datatype='integer' name='Bond Number' ordinal='7' />
+                  <column datatype='integer' name='Denominations_x' ordinal='8' />
+                  <column datatype='integer' name='Issue Branch Code' ordinal='9' />
+                  <column datatype='integer' name='Issue Teller' ordinal='10' />
+                  <column datatype='string' name='Status' ordinal='11' />
+                  <column datatype='integer' name='Sr No._y' ordinal='12' />
+                  <column datatype='date' date-parse-format='dd/MMM/yyyy' name='Date Of Encashment' ordinal='13' />
+                  <column datatype='string' name='Name of Political party' ordinal='14' />
+                  <column datatype='string' name='Account Number' ordinal='15' />
+                  <column datatype='integer' name='Denominations_y' ordinal='16' />
+                  <column datatype='integer' name='Pay Branch Code' ordinal='17' />
+                  <column datatype='integer' name='Pay Teller' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_65078F675FDF47C2B4589B0876548CB2' table='[Extract].[Sheet1_65078F675FDF47C2B4589B0876548CB2]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Issue Branch Code]' />
+              <expression op='[Branch Code No.]' />
+            </expression>
+            <first-end-point object-id='Sheet1_65078F675FDF47C2B4589B0876548CB2' />
+            <second-end-point object-id='Sheet1_1F065E2C0BAE404FB53348E5DE9A74C0' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated) 1' name='[Action3_7CC2BA91A20C4E2B81C4323BCFF8BCBE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024' type='sheet' worksheet='Political Party' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated) 1' name='[Action4_22CAA304D6AE4BB594DBBB0129B66FED]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024' type='sheet' worksheet='year' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action5_7529B246C0C84F81AF41344F9723DBE1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024' type='sheet' worksheet='States' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated) 1' name='[Action5_BC01FB95E50141F8A6BA71AA759D4D67]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024 (2)' type='sheet' worksheet='Firms' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024 (2)' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated) 1 1' name='[Action6_0DFC979F2585410CBE66EB6C2F01507B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024 (2)' type='sheet' worksheet='Political Party' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024 (2)' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action6_CFEE357779BE4E32AC9C05CDFD28A00E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024' type='sheet' worksheet='Firms' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated) 1' name='[Action8_9F60D3BE0F874000B4AAFB2D1607F8C2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024 (2)' type='sheet' worksheet='States' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024 (2)' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action8_F8903DCEFF834569B0A37623AEF3C6B4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Electoral Bond 2019-2024 (2)' type='sheet' worksheet='Year distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Electoral Bond 2019-2024 (2)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Firms'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name of the Purchaser]' derivation='None' name='[none:Name of the Purchaser:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[pcto:sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]'>
+            <groupfilter function='level-members' level='[Name of Political party]' user:ui-action-filter='[Action1_ADE88600B3544258A268BD6766167C43]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Name of Political party]' />
+              <groupfilter function='level-members' level='[State/UT]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]'>
+            <groupfilter function='level-members' level='[State/UT]' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]'>
+            <groupfilter function='member' level='[yr:Date of Purchase:ok]' member='2019' user:ui-action-filter='[Action2_5C93F0894D7348BC8121E41F31EE42D9]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Calculation_86553556820480000:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Calculation_86553556820480000:qk]' />
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+              <tooltip column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+              <text column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of the Purchaser:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Purchaser:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of the Purchaser:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Bonds (Across):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Calculation_86553556820480000:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Bonds(RS):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F9CBD925-26BD-4B4C-B242-6FA905B3D8D3}' />
+    </worksheet>
+    <worksheet name='Political Party'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name of Political party]' derivation='None' name='[none:Name of Political party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Denominations_x]' derivation='Sum' name='[pcto:sum:Denominations_x:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Name of Political party]' />
+              <groupfilter function='level-members' level='[State/UT]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]'>
+            <groupfilter function='level-members' level='[Name of the Purchaser]' user:ui-action-filter='[Action2_B0D14B4F2FF74B4A90F12A0C9269929A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]'>
+            <groupfilter function='level-members' level='[State/UT]' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]'>
+            <groupfilter function='member' level='[yr:Date of Purchase:ok]' member='2019' user:ui-action-filter='[Action2_5C93F0894D7348BC8121E41F31EE42D9]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]'>
+            <groupfilter function='level-members' level='[yr:Date of Purchase:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Denominations_x:qk]' />
+              <text column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of Political party:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Political Party:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of Political party:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Bonds (Across):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Denominations_x:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Bonds(Rs):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EC6DFE2A-3C49-4F05-98C9-80F3A11E0B1F}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='spatial' name='[Pincode]' role='measure' type='nominal' />
+            <column-instance column='[Pincode]' derivation='Collect' name='[clct:Pincode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+              <lod column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[clct:Pincode:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8D397AD2-F771-4574-8108-5AD8FDD718B1}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[State/UT]' derivation='None' name='[none:State/UT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Longitude (generated)]' field-type='quantitative' max='12626562.919638632' min='5245847.0938929021' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Latitude (generated)]' field-type='quantitative' max='5193514.7585310237' min='373455.54251696216' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' value='c&quot;$&quot;#,##0.0;-&quot;$&quot;#,##0.0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' max='2918.9069999999824' min='0.0' num-steps='5' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6dee6</color>
+                <color>#beccdb</color>
+                <color>#a6bbd0</color>
+                <color>#90abc5</color>
+                <color>#7c9cbb</color>
+                <color>#698db0</color>
+                <color>#577fa5</color>
+                <color>#47719a</color>
+                <color>#39648f</color>
+                <color>#2c5985</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+              <lod column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' />
+              <geometry column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Latitude (generated)]</rows>
+        <cols>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A9D95031-09DE-41C7-BDFB-D4D9AD8312D9}' />
+    </worksheet>
+    <worksheet name='State_Party_distributon'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Name of Political party]' derivation='None' name='[none:Name of Political party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State/UT]' derivation='None' name='[none:State/UT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Denominations_x]' derivation='Sum' name='[sum:Denominations_x:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]'>
+            <groupfilter function='level-members' level='[Name of the Purchaser]' user:ui-action-filter='[Action6_CFEE357779BE4E32AC9C05CDFD28A00E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of Political party:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]</rows>
+        <cols>[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]</cols>
+      </table>
+      <simple-id uuid='{AAD81A4D-312E-44BE-AF0F-CEEC8A1FF4F0}' />
+    </worksheet>
+    <worksheet name='States'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[State/UT]' derivation='None' name='[none:State/UT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Denominations_x]' derivation='Sum' name='[sum:Denominations_x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]'>
+            <groupfilter function='level-members' level='[Name of Political party]' user:ui-action-filter='[Action3_7CC2BA91A20C4E2B81C4323BCFF8BCBE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]'>
+            <groupfilter function='level-members' level='[Name of the Purchaser]' user:ui-action-filter='[Action6_CFEE357779BE4E32AC9C05CDFD28A00E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]'>
+            <groupfilter function='member' level='[yr:Date of Purchase:ok]' member='2019' user:ui-action-filter='[Action4_22CAA304D6AE4BB594DBBB0129B66FED]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' included-values='non-null' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (YEAR(Date of Purchase))]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' value='false' />
+            <format attr='text-orientation' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' value='-90' />
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' value='c&quot;₹&quot;#,##0.00&quot;Cr&quot;;-&quot;₹&quot;#,##0.00&quot;Cr&quot;' />
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' value='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>State/UT:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Electoral Bonds:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='off' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]</rows>
+        <cols>[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:State/UT:nk]</cols>
+      </table>
+      <simple-id uuid='{7866497C-10C6-4C9A-B895-2BBEA29286A6}' />
+    </worksheet>
+    <worksheet name='Year distribution'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column caption='Donation (Cr)' datatype='real' default-format='c&quot;₹&quot;#,##0&quot;Cr&quot;;-&quot;₹&quot;#,##0&quot;Cr&quot;' name='[Calculation_86553556820480000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Denominations_x]/10^7' />
+            </column>
+            <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+            <column caption='Denominations x' datatype='integer' default-format='N' name='[Denominations_x]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Calculation_86553556820480000]' derivation='Sum' name='[sum:Calculation_86553556820480000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Denominations_x]' derivation='Sum' name='[sum:Denominations_x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]'>
+            <groupfilter function='level-members' level='[Name of Political party]' user:ui-action-filter='[Action6_0DFC979F2585410CBE66EB6C2F01507B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]'>
+            <groupfilter function='level-members' level='[State/UT]' user:ui-action-filter='[Action8_9F60D3BE0F874000B4AAFB2D1607F8C2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' value='c&quot;Rs &quot;#,##0,,,.00B;-&quot;Rs &quot;#,##0,,,.00B' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' />
+              <text column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year of Date of Purchase:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Donation in Cr:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]</rows>
+        <cols>[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]</cols>
+      </table>
+      <simple-id uuid='{043623F8-A4CE-458A-AE32-4B5E8A12AF72}' />
+    </worksheet>
+    <worksheet name='year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='11'>Select one or more years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_buyer_and_user)' name='federated.09v3dpr0fqpqwo10xao3e0526kon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09v3dpr0fqpqwo10xao3e0526kon'>
+            <column datatype='date' name='[Date of Purchase]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of Political party]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name of the Purchaser]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State/UT]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <aliases>
+                <alias key='&quot;Goa, Lakshadweep&quot;' value='Goa' />
+                <alias key='&quot;Gujarat, Dadar &amp; Nagar Haveli and Daman &amp; Diu&quot;' value='Gujarat' />
+                <alias key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='Haryana &amp; Punjab' />
+                <alias key='&quot;Tamil Nadu and Puducherry&quot;' value='Tamil Nadu' />
+                <alias key='&quot;West Bengal and Andaman &amp; Nicobar&quot;' value='West Bengal' />
+              </aliases>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Haryana, Punjab, and Chandigarh&quot;' value='&quot;Punjab&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Date of Purchase]' derivation='Year' name='[yr:Date of Purchase:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]'>
+            <groupfilter function='level-members' level='[Name of Political party]' user:ui-action-filter='[Action3_7CC2BA91A20C4E2B81C4323BCFF8BCBE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Name of Political party]' />
+              <groupfilter function='level-members' level='[State/UT]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]'>
+            <groupfilter function='level-members' level='[Name of the Purchaser]' user:ui-action-filter='[Action6_CFEE357779BE4E32AC9C05CDFD28A00E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]'>
+            <groupfilter function='level-members' level='[State/UT]' user:ui-action-filter='[Action5_7529B246C0C84F81AF41344F9723DBE1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party,State/UT)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of the Purchaser)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (State/UT)]</column>
+            <column>[federated.09v3dpr0fqpqwo10xao3e0526kon].[Action (Name of Political party)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]</cols>
+      </table>
+      <simple-id uuid='{E9847F57-B7DA-4832-8660-C57E616EA61A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Electoral Bond 2019-2024'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='31' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='32' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='28' param='horz' type-v2='layout-flow' w='98400' x='800' y='6250'>
+              <zone h='92750' id='5' type-v2='layout-basic' w='98400' x='800' y='6250'>
+                <zone h='70036' id='10' name='Political Party' w='49200' x='800' y='28964'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='70036' id='14' name='Firms' w='49200' x='50000' y='28964'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='22714' id='21' name='States' w='49200' x='50000' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14875' id='24' type-v2='text' w='49200' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontsize='20'>Explore!</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7839' id='15' name='year' w='49200' x='800' y='21125'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='4625' id='29' type-v2='text' w='21600' x='78100' y='1500'>
+          <formatted-text>
+            <run fontsize='6'>*Other States have has no electoral bond purchased</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='66' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='65' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5250' id='32' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4625' id='29' type-v2='text' w='21600' x='78100' y='1500'>
+                  <formatted-text>
+                    <run fontsize='6'>*Other States have has no electoral bond purchased</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14875' id='24' type-v2='text' w='49200' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontsize='20'>Explore!</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='174' h='22714' id='21' is-fixed='true' name='States' w='49200' x='50000' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='55' h='7839' id='15' is-fixed='true' name='year' w='49200' x='800' y='21125'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='70036' id='10' is-fixed='true' name='Political Party' w='49200' x='800' y='28964'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='70036' id='14' is-fixed='true' name='Firms' w='49200' x='50000' y='28964'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3574896E-4A83-4A0A-A54B-FF312187567B}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Electoral Bond 2019-2024 (2)'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='51' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='28' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                <zone h='74004' id='10' name='Political Party' w='49200' x='800' y='24996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='74004' id='14' name='Firms' w='49200' x='50000' y='24996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23996' id='21' name='States' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8731' id='24' type-v2='text' w='49200' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontsize='14'>Electoral Bonds (2019-2024 )</run>
+                    <run>
+Explore with interactive visualization, select political parties, firm, state , year
+Press Clt to select more than one  entity</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15265' id='43' name='Year distribution' w='49200' x='800' y='9731'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='4625' id='29' type-v2='text' w='21600' x='78100' y='1500'>
+          <formatted-text>
+            <run fontsize='6'>*Other States have has no electoral bond purchased</run>
+          </formatted-text>
+        </zone>
+        <zone h='3000' id='53' type-v2='dashboard-object' w='2400' x='0' y='95000'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{EF626A32-D386-479B-B376-92139FA52B0C}&quot; zone-id=&quot;53&quot; zone-ids=[52]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+        <zone forceUpdate='true' h='1625' id='52' type-v2='text' w='99200' x='400' y='98250'>
+          <formatted-text>
+            <run fontsize='4'>This dashboard is created based on the pdf provided to Election Commition of India.  Special thanks to </run>
+            <run auto-url='true' fontsize='4' hyperlink='tabdoc:load-url url=&amp;quot;https://github.com/rjsnh1522/electoral_bond_data&amp;quot;'>https://github.com/rjsnh1522/electoral_bond_data</run>
+            <run fontsize='4'> for converting pdf to excel</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='75' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='74' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='8731' id='24' type-v2='text' w='49200' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontsize='14'>Electoral Bonds (2019-2024 )</run>
+                    <run>
+Explore with interactive visualization, select political parties, firm, state , year
+Press Clt to select more than one  entity</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='23996' id='21' is-fixed='true' name='States' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4625' id='29' type-v2='text' w='21600' x='78100' y='1500'>
+                  <formatted-text>
+                    <run fontsize='6'>*Other States have has no electoral bond purchased</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='114' h='15265' id='43' is-fixed='true' name='Year distribution' w='49200' x='800' y='9731'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74004' id='10' is-fixed='true' name='Political Party' w='49200' x='800' y='24996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74004' id='14' is-fixed='true' name='Firms' w='49200' x='50000' y='24996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='1625' id='52' type-v2='text' w='99200' x='400' y='98250'>
+                  <formatted-text>
+                    <run fontsize='4'>This dashboard is created based on the pdf provided to Election Commition of India.  Special thanks to </run>
+                    <run auto-url='true' fontsize='4' hyperlink='tabdoc:load-url url=&amp;quot;https://github.com/rjsnh1522/electoral_bond_data&amp;quot;'>https://github.com/rjsnh1522/electoral_bond_data</run>
+                    <run fontsize='4'> for converting pdf to excel</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F874C8F1-E341-46E4-83CD-C7BB5EC30463}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Political Party'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[yr:Date of Purchase:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[pcto:sum:Denominations_x:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1465E77A-CA5D-47DD-B07B-B144190E805D}' />
+    </window>
+    <window class='worksheet' name='Firms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79C4FCCB-051B-40C2-B1C5-E0DD29E04F3A}' />
+    </window>
+    <window class='worksheet' name='year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37CB2898-DB21-41FA-B411-858A2BB8A40B}' />
+    </window>
+    <window class='worksheet' name='States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4EE844FC-96E2-43B7-8804-6BA05A15AF5D}' />
+    </window>
+    <window class='worksheet' name='State_Party_distributon'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[none:Name of Political party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C846CDC4-7A78-413E-9B64-9A57E9D01A8F}' />
+    </window>
+    <window class='dashboard' name='Electoral Bond 2019-2024'>
+      <viewpoints>
+        <viewpoint name='Firms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Political Party'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='States'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{54070A53-E08C-4DD1-B43E-C8C612BACEC1}' />
+    </window>
+    <window class='worksheet' name='Year distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Denominations_x:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CA3B1E9-F661-46F9-9C05-E8051F70D29A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Electoral Bond 2019-2024 (2)'>
+      <viewpoints>
+        <viewpoint name='Firms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Political Party'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='States'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EF626A32-D386-479B-B376-92139FA52B0C}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{874A33F4-EC3A-4937-AC80-8282CE26C695}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='202'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09v3dpr0fqpqwo10xao3e0526kon].[sum:Calculation_86553556820480000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC3F49AF-51FB-48F3-A72E-800992959066}' />
+    </window>
+  </windows>
+</workbook>
